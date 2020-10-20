@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.form-wrapper {
+  min-width: 400px;
+  width: 25%;
+}
+
+.input-field {
+  border: 1px solid red;
+  border-radius: 10px;
+  height: 40px;
+  margin: 3px;
+  padding-left: 12px;
+}
+
+.link {
+  border: 1px solid red;
+  margin: 3px;
+  display: flex;
+  background-color: lightgrey;
+}

@@ -1,0 +1,344 @@
+/* App */
+.App{
+    background-color: #28ee00ee;
+    height: 100vh;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Quikly Center Everything In Div */
+.cfb{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.Container{
+    position: absolute;
+
+    width: 50%;
+    height: 40%;
+    margin-top: 30%;
+    border-radius: 25%;
+}
+
+/* Banner Side of Container */
+.banner-side{
+    position: absolute;
+    z-index: 2;
+    right: 65%;
+
+    border-radius: 25%;
+
+    width: 35%;
+    height: 100%;
+
+    flex-direction: column;
+
+    background-color: green;
+    opacity: 1;
+
+    color: orange;
+    text-align: center;
+
+    transition: 2s;
+}
+
+/* Form Side of Container */
+.form-side{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+
+    border-radius: 25%;
+
+    width: 65%;
+    height: 100%;
+
+    background-color: orange;
+    opacity: 1;
+
+    font-weight: bold;
+    color: green;
+
+    transition: 2s;
+}
+
+.send-right{
+    right: 0;
+}
+
+.send-left{
+    right: 35%;
+}
+
+
+/* Layout styling of forms, labels, inputs */
+.form-comp{
+    flex-direction: column;
+}
+
+.sign-up-form{
+    width: 50%;
+    flex-direction: column;
+}
+
+.sign-up-form > label{
+    padding: 0.5em;
+    width: 100%
+}
+
+.sign-up-form > label > input{
+    width: 100%
+}
+
+
+/* All Buttons Styling */
+button {
+    padding: 1em;
+
+    border-radius: 5em;
+    
+    background-color: #035E7B;
+
+    color: #EEFCF8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+/* All Inputs Styling */
+input {
+    padding: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+    }
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+}
+    
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100vw;
+    height:100vh;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+body {
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  color: orange;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  } 
